@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
 import PostsEdit from './views/PostsEdit.vue'
+import PostsNew from './views/PostsNew.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/posts/:id/edit',
       name: 'postsEdit',
       component: PostsEdit
+    },
+    {
+      path: '/posts/new',
+      name: 'postsNew',
+      component: PostsNew
     }
   ]
 })
